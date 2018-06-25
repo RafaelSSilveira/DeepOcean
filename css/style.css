@@ -1,0 +1,163 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+h2, a {
+  color: #3a71dd;
+}
+
+.navbar {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  float: left;
+  z-index: 100;
+  transition: background 0.4s ease-out;
+  font-family: "Quicksand", sans-serif;
+}
+.navbar a {
+  color: white;
+  transition: 0.8s;
+}
+.navbar a:hover {
+  color: #80aaff;
+}
+.navbar a:active, .navbar a:focus {
+  outline: none;
+  background-color: transparent;
+}
+.navbar .navbar-toggler {
+  color: #ffffff;
+}
+.navbar #group0 {
+  padding-top: 0px;
+  font-size: 30px;
+  animation-name: fademenu;
+  animation-duration: 4s;
+}
+.navbar #group1 {
+  padding-top: 16px;
+  animation-name: fademenu;
+  animation-duration: 6s;
+}
+.navbar #group2 {
+  padding-top: 16px;
+  animation-name: fademenu;
+  animation-duration: 8s;
+}
+@keyframes fademenu {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: #ffffff;
+  }
+}
+
+.parallax-intro {
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background: url("../img/header.jpg") no-repeat fixed 50% 0;
+  font-family: "Poiret One", cursive;
+  background-size: cover;
+  color: #ffffff;
+}
+.parallax-intro .intro-content {
+  text-align: center;
+  padding: 250px 0;
+}
+.parallax-intro .intro-content .brand-heading {
+  font-size: 80px;
+}
+.parallax-intro .intro-content .intro-text {
+  font-size: 25px;
+}
+@media (max-width: 768px) {
+  .parallax-intro .intro-content {
+    height: 100%;
+    padding: 50px;
+  }
+}
+
+.parallax {
+  height: 70vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .parallax {
+    height: 100vh;
+  }
+}
+
+.parallax.bg1 {
+  background: url("../img/bg1.jpg") no-repeat fixed 50% 0;
+  background-size: cover;
+}
+
+.parallax.bg2 {
+  background: url("../img/bg2.jpg") no-repeat fixed 50% 0;
+  background-size: cover;
+}
+
+.content-section {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+@media (max-width: 768px) {
+  .content-section {
+    padding-top: 50px;
+  }
+}
+
+.btn-default {
+  text-align: center;
+  display: inline-block;
+  padding: 15px 40px;
+  border: 1px solid #002266;
+  font-size: 25px;
+  color: #002266;
+  cursor: pointer;
+  letter-spacing: 2px;
+  position: relative;
+  margin: 0 20px;
+}
+
+.btn-default:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 100%;
+  background: #002266;
+  left: 0;
+  bottom: 0;
+  transition: all 0.3s;
+  opacity: 0.3;
+}
+
+.btn-default:hover:before {
+  height: 100%;
+}
+
+footer {
+  padding: 10px 0;
+  border-top: solid 1px #002266;
+}
+footer p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
